@@ -1,0 +1,120 @@
+label {
+  color: #6b1a1a;
+  font-size: 18px;
+  font-weight: 900;
+}
+h3 {
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+.addBook {
+  margin-top: 105px;
+  margin-left: 200px;
+
+  justify-content: center;
+  width: 900px;
+
+  color: white;
+}
+.addbookbtn {
+  position: absolute;
+
+  bottom: 40px;
+  left: 60%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background-color: #6b1a1a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.addbackBtn {
+  position: absolute;
+  bottom: 40px;
+  left: 70%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background-color: #6b1a1a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 500px;
+}
+
+.form-group label {
+  width: 150px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #070606;
+  border-radius: 6px;
+
+  color: black;
+}
+.checkbox-large {
+  margin-left: 10px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .addBook {
+    margin: 5px 15px 20px 15px;
+    width: auto;
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    width: 100%;
+  }
+
+  .form-group label {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 10px;
+  }
+
+  .form-group input,
+  .form-group select {
+    margin-top: 0px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .addbookbtn,
+  .addbackBtn {
+    position: static;
+    width: 50%;
+    margin: 5px;
+    transform: none;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .checkbox-large {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,105 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+
+     background: url('../bookStore/img/b2.jpg') no-repeat center center fixed;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: sans-serif;
+ 
+}
+.title{
+    margin-top:10px;
+  margin-bottom: 25px;
+  color:white;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+.auth {
+   margin: auto;
+   margin-top: 90px;
+ background: rgba(255, 255, 255, 0.1); /* Light transparent */
+  backdrop-filter: blur(8px); /* Blur background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  color: white;
+  max-width: 400px;
+  
+}
+
+
+
+
+.auth input[type="text"],
+.auth input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px;
+  border: 2px solid wheat;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+
+}
+
+.auth input[type="text"]:focus,
+.auth input[type="password"]:focus {
+  border-color:#793d01;
+  outline: none;
+   display: 'block'; 
+  
+}
+
+.auth button {
+  width: 100%;
+  padding: 14px;
+  background:#793d01;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth button:hover {
+    color:black;
+  background:wheat;
+}
+
+
+@media (max-width: 480px) {
+  .auth {
+    margin-top: 60px;
+    padding: 1.5rem;
+    max-width: 320px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .auth input[type="text"],
+  .auth input[type="password"] {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .auth button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

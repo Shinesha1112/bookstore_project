@@ -1,0 +1,149 @@
+
+.bookList {
+  width: 600px;
+  
+  margin: auto;
+  margin-top: 0%;
+  padding: 8px;
+  background-color:transparent;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgb(243, 215, 162);
+  text-align: center;
+  
+}
+
+
+.bookList h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  color:whitesmoke;
+}
+
+.bookList ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.bookList li {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.bookList li:hover {
+  transform: scale(1.02);
+}
+.bookList h4{
+  color:black;
+  font-size: 17px;
+  font-weight: bold;
+}
+.bookList strong {
+  display: block;
+  font-size: 18px;
+  color: #4a0e0e;
+  margin-bottom: 5px;
+}
+
+.bookList button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #6b1a1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bookList button:hover {
+  background-color: #a83232;
+}
+
+.bookList > button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color:#6b1a1a ;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bookList > button:hover {
+  background-color:#a83232;
+}
+.bookList .book-details {
+  flex-grow: 1;
+}
+
+.bookList .book-actions {
+
+  display: flex;
+  gap: 10px;
+  
+}
+
+.bookList .book-actions button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #6b1a1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bookList .book-actions button:hover {
+  background-color: #a83232;
+}
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  border: none;
+  background-color:#6b1a1a;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color:  #a83232;
+  font-weight: bold;
+}
+@media (max-width:480px){
+    .bookList {
+    width: 110%;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgb(243, 215, 162);
+    font-size: 14px; 
+    margin-left: -12px;
+  }
+  .bookList h3 {
+  font-size:20px;
+  margin-bottom: 12px;
+}
+.bookList ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+}
