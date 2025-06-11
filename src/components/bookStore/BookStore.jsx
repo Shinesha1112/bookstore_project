@@ -18,7 +18,7 @@ function BookStore() {
      useEffect(()=>{
       const fetchBooks=async()=>{
         try{
-          const response=await fetch(`${BASE_URL}/books/`);
+          const response=await fetch("https://booklistproject-production.up.railway.app/books/");
           const data=await response.json();
           setBooks(data);
         }
