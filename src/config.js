@@ -1,2 +1,2 @@
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = "https://bookstore-backend-ijsd.onrender.com/";
 export default BASE_URL;
