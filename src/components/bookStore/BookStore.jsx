@@ -18,7 +18,7 @@ function BookStore() {
      useEffect(()=>{
       const fetchBooks=async()=>{
         try{
-          const response=await fetch("https://bookstore-backend-ijsd.onrender.com/books/");
+          const response=await fetch(`${BASE_URL}books/`);
           const data=await response.json();
           setBooks(data);
         }

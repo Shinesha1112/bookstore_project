@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Login from './Login';
-
+import BASE_URL from './/../config';
 
 
 
@@ -14,7 +14,7 @@ function Register({userName,password}) {
         return;
     }
     try{ 
-        const response=await fetch("https://bookstore-backend-ijsd.onrender.com/api/register",{
+        const response=await fetch(`${BASE_URL}api/register`,{
             method:"POST",
             headers:{
                 'Content-Type':"application/json",

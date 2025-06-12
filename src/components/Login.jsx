@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import BASE_URL from './../config';
 
 
 function Login({userName,password}) {
@@ -12,7 +13,7 @@ function Login({userName,password}) {
       
       
       try{
-        const response = await fetch('https://bookstore-backend-ijsd.onrender.com/api/login',{
+        const response = await fetch(`${BASE_URL}api/login`,{
             method:"POST",
             headers:{
                 'Content-Type':'application/json',
