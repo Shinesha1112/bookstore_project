@@ -14,7 +14,7 @@ function Register({userName,password}) {
         return;
     }
     try{ 
-        const response=await fetch("http://localhost:8081/api/register",{
+        const response=await fetch("https://bookstore-backend-ijsd.onrender.com/api/register",{
             method:"POST",
             headers:{
                 'Content-Type':"application/json",
