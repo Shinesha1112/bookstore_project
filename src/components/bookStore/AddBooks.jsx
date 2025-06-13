@@ -35,7 +35,7 @@ function AddBooks() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const method=editBook?"PUT":"Post";
-    const url=editBook?`${BASE_URL}/books/${editBook.id}`:`${BASE_URL}/books`;
+    const url=editBook?`${BASE_URL}books/${editBook.id}`:`${BASE_URL}books`;
     try {
       const response = await fetch(url, {
         method: method,
