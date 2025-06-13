@@ -86,7 +86,7 @@ const indexOfLastBook = currentPage * booksPerPage;
           ))}
         </ul>
     
-      {username==='shinesha'&& <button onClick={() => navigate('/addBooks')}>Add New Books</button>}
+      {username==='admin'&& <button onClick={() => navigate('/addBooks')}>Add New Books</button>}
 
       <div className="pagination">
         {Array.from({ length: totalPages }, (_, i) => (
