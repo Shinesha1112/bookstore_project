@@ -75,7 +75,7 @@ const indexOfLastBook = currentPage * booksPerPage;
               <strong>{book.bookName}</strong><h4>{book.author}</h4>
               
                </div>
-                {username === 'shinesha' && (
+                {username === 'admin' && (
       <div className='book-actions'> 
         
         <button onClick={(e) => { e.stopPropagation();  handleEdit(book)}}>Edit</button>
