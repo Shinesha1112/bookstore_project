@@ -33,7 +33,7 @@ function BookStore() {
 
      const handleDelete=async(id)=>{
       try{
-         await fetch(`${BASE_URL}/books/${id}`,{
+         await fetch(`${BASE_URL}books/${id}`,{
           method:"DELETE"
          });
          setBooks(Books.filter((book) => book.id !== id));
