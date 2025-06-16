@@ -70,12 +70,14 @@ const indexOfLastBook = currentPage * booksPerPage;
      
         <ul>
           {currentBooks.map((book)=>(
-            <li key={book.id}  onClick={()=>handleBookDetails(book)}>
+            <li key={book.id}  >
               <div className='book-details'>
               <strong>{book.bookName}</strong><h4>{book.author}</h4>
-              
+              <button onClick={() => handleBookDetails(book)}>
+          View Details
+        </button>
                </div>
-               <h2>Click to see the book details...</h2>
+               
                 {username === 'admin' && (
       <div className='book-actions'> 
         
@@ -86,7 +88,7 @@ const indexOfLastBook = currentPage * booksPerPage;
             </li>
           ))}
         </ul>
-    
+      
       {username==='admin'&& <button onClick={() => navigate('/addBooks')}>Add New Books</button>}
 
       <div className="pagination">
