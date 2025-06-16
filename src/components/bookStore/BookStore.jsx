@@ -11,7 +11,7 @@ function BookStore() {
   const username = localStorage.getItem('username');
 
   const [currentPage,setCurrentPage]=useState(1);
-    const booksPerPage = 4;
+    const booksPerPage = 3;
 
   const navigate=useNavigate();
      const [Books,setBooks] = useState([]);
