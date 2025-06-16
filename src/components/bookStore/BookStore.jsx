@@ -75,6 +75,7 @@ const indexOfLastBook = currentPage * booksPerPage;
               <strong>{book.bookName}</strong><h4>{book.author}</h4>
               
                </div>
+               <h2>Click to see the book details...</h2>
                 {username === 'admin' && (
       <div className='book-actions'> 
         
