@@ -6,8 +6,7 @@ function BookDetails() {
     const navigate=useNavigate();
     const location=useLocation();
     const bookDetails=location.state?.book;
-    console.log(bookDetails);
-    console.log(bookDetails.available);
+ 
 
      if (!bookDetails) {
     return <p>No book details available.</p>;
