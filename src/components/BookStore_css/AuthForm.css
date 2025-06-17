@@ -26,7 +26,7 @@ body, html {
 }
 .auth {
    margin: auto;
-   margin-top: 90px;
+   margin-top: 50px;
  background: rgba(255, 255, 255, 0.1); /* Light transparent */
   backdrop-filter: blur(8px); /* Blur background */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
