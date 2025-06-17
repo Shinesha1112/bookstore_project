@@ -46,6 +46,10 @@ function Register({userName,password}) {
   return (
     <div style={{textAlign:"center"}}>   
          <button onClick={handleRegsiterButton} style={{ marginTop: '10px' }}>Register</button>
+         <p style={{ fontSize: '14px', color: 'gray', marginTop: '10px' }}>
+  Don’t have an account? Register first. admin users have access to add, edit, and delete books.
+</p>
+
 
     </div>
   )
