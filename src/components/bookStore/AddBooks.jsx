@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import '../BookStore_css/AddBook.css'
 import { useNavigate } from "react-router-dom";
 import BASE_URL from '..//..//config'
+import LogOut from "./LogOut";
 
 function AddBooks() {
   const navigate=useNavigate();
@@ -57,6 +58,7 @@ function AddBooks() {
         volume:'',
         available:true
         });
+        navigate('/bookList')
       } else {
         alert("Failed to add book.");
       }
@@ -67,6 +69,7 @@ function AddBooks() {
   };
   return (
     <div  className='addBook'>
+      <LogOut/>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
   <label>Book Name:</label>

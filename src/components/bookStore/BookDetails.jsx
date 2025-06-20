@@ -1,6 +1,7 @@
 import React from 'react';
 import {useLocation,useNavigate} from 'react-router-dom';
 import '../BookStore_css/BookDetails.css'
+import LogOut from './LogOut';
 
 function BookDetails() {
     const navigate=useNavigate();
@@ -13,6 +14,7 @@ function BookDetails() {
   }
   return (
      <div className="book-details-container" >
+      <LogOut/>
       <div className="book-details-card">
         <h2 className="book-title">{bookDetails.bookName}</h2>
         <p className="book-author">{bookDetails.author} - ₹{bookDetails.price}</p>

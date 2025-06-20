@@ -6,6 +6,7 @@ import AddBooks from './AddBooks';
 import { useLocation } from 'react-router-dom';
 import '../BookStore_css/BookList.css';
 import BASE_URL from '..//..//config';
+import LogOut from './LogOut';
 
 function BookStore() {
   const username = localStorage.getItem('username');
@@ -32,11 +33,14 @@ function BookStore() {
 
 
      const handleDelete=async(id)=>{
+        const confirmDelete = window.confirm("Are you sure you want to delete this book?");
+        if(!confirmDelete) return;
       try{
          await fetch(`${BASE_URL}books/${id}`,{
           method:"DELETE"
          });
          setBooks(Books.filter((book) => book.id !== id));
+         alert("Book deleted successfully!")
          
       }
       catch (error){ 
@@ -66,6 +70,7 @@ const indexOfLastBook = currentPage * booksPerPage;
   return (
     
     <div className='bookList'>
+      <LogOut/>
         <h3>"List of Books"</h3>
      
         <ul>
