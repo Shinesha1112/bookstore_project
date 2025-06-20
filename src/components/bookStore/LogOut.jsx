@@ -26,6 +26,8 @@ function LogOut() {
       borderRadius: '6px',
       boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
       cursor: 'pointer',
+      background:'#793d01',
+    color:'white'
     }}
   >
     LogOut

@@ -1,8 +1,10 @@
 @media (max-width: 768px) {
   .logOutButton {
     top: 10px;
-    right: 10px;
+    right: 5px;
     padding: 6px 12px;
     font-size: 14px;
+    background:#793d01;
+    color:white;
   }
 }
