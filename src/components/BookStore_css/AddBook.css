@@ -17,18 +17,15 @@ h3 {
   color: white;
 }
 .addbookbtn {
-  position: absolute;
-   top:10px;
-  bottom: 40px;
-  left: 60%;
-  transform: translateX(-50%);
-  padding: 12px 24px;
+ padding: 12px 24px;
   background-color: #6b1a1a;
   color: white;
   border: none;
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
 }
 .addbackBtn {
   position: absolute;
