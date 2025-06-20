@@ -11,7 +11,7 @@ function LogOut() {
 
     }
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: 'relative', height: '60px' }}>
   <button
     onClick={handleLogOut}
   className='logOutButton'
