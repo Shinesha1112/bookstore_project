@@ -68,8 +68,10 @@ function AddBooks() {
     }
   };
   return (
-    <div  className='addBook'>
+    <div>
       <LogOut/>
+    <div  className='addBook'>
+      
       <form onSubmit={handleSubmit}>
         <div className="form-group">
   <label>Book Name:</label>
@@ -148,6 +150,7 @@ function AddBooks() {
 </button>
          <button onClick={()=>navigate('/bookList')} className='addbackBtn'>Back</button>
       </form>
+    </div>
     </div>
   );
 }

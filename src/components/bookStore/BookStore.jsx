@@ -68,9 +68,10 @@ const indexOfLastBook = currentPage * booksPerPage;
   }
      
   return (
-    
-    <div className='bookList'>
+    <div>
       <LogOut/>
+    <div className='bookList'>
+      
         <h3>"List of Books"</h3>
      
         <ul>
@@ -103,6 +104,7 @@ const indexOfLastBook = currentPage * booksPerPage;
           </button>
         ))}
       </div>
+    </div>
     </div>
   
   )

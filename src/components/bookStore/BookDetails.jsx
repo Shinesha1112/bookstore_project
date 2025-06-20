@@ -13,8 +13,10 @@ function BookDetails() {
     return <p>No book details available.</p>;
   }
   return (
+      <div>
+          <LogOut/>
      <div className="book-details-container" >
-      <LogOut/>
+    
       <div className="book-details-card">
         <h2 className="book-title">{bookDetails.bookName}</h2>
         <p className="book-author">{bookDetails.author} - ₹{bookDetails.price}</p>
@@ -32,6 +34,7 @@ function BookDetails() {
       
         <button onClick={()=>navigate('/bookList')} className='backBtn' >Back</button>
       
+    </div>
     </div>
   )
 }
