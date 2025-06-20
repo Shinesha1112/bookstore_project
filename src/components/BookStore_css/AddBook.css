@@ -18,7 +18,7 @@ h3 {
 }
 .addbookbtn {
   position: absolute;
-
+   top:10px;
   bottom: 40px;
   left: 60%;
   transform: translateX(-50%);
