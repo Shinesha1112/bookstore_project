@@ -19,7 +19,7 @@
 @media (max-width: 768px) {
   .logoutButton {
     top: 6px;
-    right: 6px;
+    right: 4px;
     padding: 6px 12px;
     font-size: 14px;
   }
