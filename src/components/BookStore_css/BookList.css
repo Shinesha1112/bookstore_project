@@ -1,8 +1,8 @@
 
 .bookList {
   width: 600px;
-  margin: 30px auto 40px auto;  /* Top: 30px, Bottom: 40px */
-  padding: 8px 8px 50px 8px;     /* Extra bottom padding for pagination */
+  margin: 0 auto 50px auto;  /* top: 0, bottom: 50px */
+  padding: 8px 8px 50px 8px;  /* padding-bottom for pagination */
   background-color: transparent;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgb(243, 215, 162);
