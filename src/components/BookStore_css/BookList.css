@@ -1,14 +1,16 @@
 
 .bookList {
   width: 600px;
-  margin: 40px auto 80px auto;
-  padding: 16px;
-  background-color: transparent;
+  
+  margin: auto;
+  margin-top: 0%;
+  padding: 8px;
+  background-color:transparent;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgb(243, 215, 162);
   text-align: center;
+  
 }
-
 
 
 .bookList h3 {
@@ -112,13 +114,14 @@
 }
 
 .pagination button {
-  margin: 0 5px;
-  padding: 6px 10px;
+  margin: 0 6px;
+  padding: 8px 14px;
   border: none;
-  background-color:#6b1a1a;
+  background-color: #6b1a1a;
   color: white;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .pagination .active {
