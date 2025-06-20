@@ -16,7 +16,6 @@ function LogOut() {
   style={{
      position: 'absolute',
     top: '20px',
-    right: '5px',
     padding: '8px 16px',
     backgroundColor:'#6b1a1a',
     color: 'white',
