@@ -1,16 +1,14 @@
 
 .bookList {
   width: 600px;
-  
-  margin: auto;
-  margin-top: 0%;
-  padding: 8px;
-  background-color:transparent;
+  margin: 40px auto 80px auto;
+  padding: 16px;
+  background-color: transparent;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgb(243, 215, 162);
   text-align: center;
-  
 }
+
 
 
 .bookList h3 {

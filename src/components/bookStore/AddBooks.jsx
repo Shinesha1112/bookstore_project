@@ -12,6 +12,7 @@ function AddBooks() {
   const editBook = location.state?.book;
 
   const mode=location.state?.mode;
+  const currentPage = location.state?.page || 1;
   
 
   const[book,setBook]=useState(editBook||{
@@ -148,7 +149,7 @@ function AddBooks() {
          <button type="submit" className="addbookbtn">
   {mode === 'edit' ? 'Update Book' : 'Add Book'}
 </button>
-         <button onClick={()=>navigate('/bookList')} className='addbackBtn'>Back</button>
+         <button onClick={()=>navigate(`/bookList?page=${currentPage}`)} className='addbackBtn'>Back</button>
       </form>
     </div>
     </div>

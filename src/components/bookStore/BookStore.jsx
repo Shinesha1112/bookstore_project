@@ -3,7 +3,7 @@ import React from 'react'
 import { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import AddBooks from './AddBooks';
-import { useLocation } from 'react-router-dom';
+import { useLocation,useSearchParams } from 'react-router-dom';
 import '../BookStore_css/BookList.css';
 import BASE_URL from '..//..//config';
 import LogOut from './LogOut';
@@ -11,9 +11,13 @@ import LogOut from './LogOut';
 function BookStore() {
   const username = localStorage.getItem('username');
 
+const [searchParams] = useSearchParams();
   const [currentPage,setCurrentPage]=useState(1);
     const booksPerPage = 3;
-
+const pageFromURL = parseInt(searchParams.get("page")) || 1;
+useEffect(() => {
+  setCurrentPage(pageFromURL);
+}, []);
   const navigate=useNavigate();
      const [Books,setBooks] = useState([]);
      useEffect(()=>{
@@ -51,7 +55,7 @@ function BookStore() {
 
      }
      const handleEdit = (book) => {
-  navigate('/addBooks', { state: { book ,mode:'edit'} });  
+  navigate('/addBooks', { state: { book ,mode:'edit',page:currentPage} });  
 };
 
 const handleBookDetails=(book)=>{ 
