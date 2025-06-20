@@ -10,13 +10,26 @@ function LogOut() {
 
     }
   return (
-    <nav style={{ padding: '10px', background: '#f2f2f2' }} >
-        <h3 style={{ display: 'inline-block', marginRight: '20px' }}>📚 Bookstore</h3>
-        <button onClick={handleLogOut} style={{ float: 'right' }}>
-            LogOut
-        </button>
+    <div style={{ position: 'relative' }}>
+  <button
+    onClick={handleLogOut}
+    style={{
+      position: 'absolute',
+      top: '20px',
+      right: '20px',
+      padding: '8px 16px',
+      backgroundColor: '#fff',
+      color: '#333',
+      border: 'none',
+      borderRadius: '6px',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+      cursor: 'pointer',
+    }}
+  >
+    LogOut
+  </button>
+</div>
 
-    </nav>
   )
 }
 
