@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import '../BookStore_css/LogOut.css'
 
 function LogOut() { 
   const navigate=useNavigate();
@@ -14,11 +13,10 @@ function LogOut() {
     <div style={{ position: 'relative' }}>
   <button
     onClick={handleLogOut}
-  className='logOutButton'
   style={{
      position: 'absolute',
     top: '20px',
-    right: '10px',
+    right: '5px',
     padding: '8px 16px',
     backgroundColor:'#6b1a1a',
     color: 'white',
