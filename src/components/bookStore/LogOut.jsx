@@ -11,13 +11,11 @@ function LogOut() {
 
     }
   return (
-    <div className='logOutButton'style={{ position: 'relative' }}>
-  <button 
-    onClick={handleLogOut}
-  >
-    LogOut
-  </button>
-</div>
+   <div className="logoutContainer">
+      <button onClick={handleLogOut} className="logoutButton">
+        LogOut
+      </button>
+    </div>
 
   )
 }
