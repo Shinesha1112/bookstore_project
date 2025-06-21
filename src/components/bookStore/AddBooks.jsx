@@ -146,7 +146,7 @@ function AddBooks() {
         
         </div>
           <div className="buttonContainer">
-         <button type="submit" className="addbookbtn">
+         <button type="submit" className="addbackbtn">
   {mode === 'edit' ? 'Update Book' : 'Add Book'}
 </button>
          <button onClick={()=>navigate(`/bookList?page=${currentPage}`)} className='addbackBtn'>Back</button>
