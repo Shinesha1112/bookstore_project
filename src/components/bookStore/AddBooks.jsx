@@ -145,11 +145,12 @@ function AddBooks() {
            />
         
         </div>
-          
+          <div className="buttonContainer">
          <button type="submit" className="addbookbtn">
   {mode === 'edit' ? 'Update Book' : 'Add Book'}
 </button>
          <button onClick={()=>navigate(`/bookList?page=${currentPage}`)} className='addbackBtn'>Back</button>
+         </div>
       </form>
     </div>
     </div>
